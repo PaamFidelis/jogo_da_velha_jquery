@@ -1,0 +1,24 @@
+.tabela{
+	width: 600px;
+	border: 2px dotted red;
+}
+
+.centralizar {
+margin: 0 auto;
+width: 50%; 
+text-align: center;
+padding: 10px;
+}
+
+.borda {
+	border: 2px dotted red;
+}
+
+.alinhar{
+	float: left;
+}
+
+.area{
+	width: 100px;
+	height: 100px;
+}

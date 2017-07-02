@@ -3,11 +3,91 @@
 	<head>
 		<meta charset="UTF-8">
 
+		<script src="js/jquery-2.2.1.js"></script>
+		<script src="js/jogo.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 		<title>Jogo da velha</title>
-		<script src="jquery-2.2.1.js"></script>
+
 	</head>
 
-	<body>
+	<body onload="criar_cenario()">
 
+		<div class="centralizar" id="pagina_inicial">
+			<table class="tabela">
+				<tbody>
+					<tr class="borda">
+						<td class="centralizar" colspan="3">Jogo da Velha</td>
+					</tr>
+					<tr>
+						<td class="borda">
+							<img src="imagens/jogador_1.png"/>
+							<br/>
+							<input type="text" name="nome_1" maxlength="10" placeholder="Digite o nome do 1º jogador" />
+						</td>
+						<td class="borda">
+							<img src="imagens/iniciar.png"/>
+							<br/>
+							<label>Iniciar</label>
+						</td>
+						<td class="borda">
+							<img src="imagens/jogador_2.png"/>
+							<br/>
+							<input type="text" name="nome_2" maxlength="10" placeholder="Digite o nome do 2º jogador" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="centralizar" id="palco_jogo">
+
+			<div class="alinhar">
+				<img src="imagens/jogador_1.png">
+			</div>
+			
+			<div class="centralizar alinhar">
+				<table>
+					<tr>
+						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
+							<div class="area"></div>
+						</td>
+						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
+							<div class="area"></div>
+						</td>
+						<td style="border-bottom: 1px solid red;">
+							<div class="area"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
+							<div class="area"></div>
+						</td>
+						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
+							<div class="area"></div>
+						</td>
+						<td style="border-bottom: 1px solid red;">
+							<div class="area"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-right: 1px solid red;">
+							<div class="area"></div>
+						</td>
+						<td style="border-right: 1px solid red;">
+							<div class="area"></div>
+						</td>
+						<td>
+							<div class="area"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="alinhar">
+				<img src="imagens/jogador_2.png">
+			</div>
+
+		</div>
 	</body>
 </html>
