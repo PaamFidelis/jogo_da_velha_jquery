@@ -1,6 +1,5 @@
 .tabela{
 	width: 600px;
-	border: 2px dotted red;
 }
 
 .centralizar {
@@ -10,10 +9,6 @@ text-align: center;
 padding: 10px;
 }
 
-.borda {
-	border: 2px dotted red;
-}
-
 .alinhar{
 	float: left;
 }
@@ -21,4 +16,16 @@ padding: 10px;
 .area{
 	width: 100px;
 	height: 100px;
+}
+
+#palco_jogo{
+	/*display: none; */
+}
+
+.borda_inferior{
+	border-bottom: 1px solid red;
+}
+
+.borda_direita{
+	border-right: 1px solid red;
 }

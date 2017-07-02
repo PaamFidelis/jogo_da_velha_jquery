@@ -11,29 +11,29 @@
 
 	</head>
 
-	<body onload="criar_cenario()">
+	<body>
 
 		<div class="centralizar" id="pagina_inicial">
 			<table class="tabela">
 				<tbody>
-					<tr class="borda">
+					<tr>
 						<td class="centralizar" colspan="3">Jogo da Velha</td>
 					</tr>
 					<tr>
-						<td class="borda">
+						<td>
 							<img src="imagens/jogador_1.png"/>
 							<br/>
-							<input type="text" name="nome_1" maxlength="10" placeholder="Digite o nome do 1º jogador" />
+							<input type="text" id="nome_1" maxlength="10" placeholder="1º jogador" />
 						</td>
-						<td class="borda">
-							<img src="imagens/iniciar.png"/>
+						<td>
+							<img id="btn_iniciar" src="imagens/iniciar.png"/>
 							<br/>
 							<label>Iniciar</label>
 						</td>
-						<td class="borda">
+						<td>
 							<img src="imagens/jogador_2.png"/>
 							<br/>
-							<input type="text" name="nome_2" maxlength="10" placeholder="Digite o nome do 2º jogador" />
+							<input type="text" id="nome_2" maxlength="10" placeholder="2º jogador" />
 						</td>
 					</tr>
 				</tbody>
@@ -44,41 +44,43 @@
 
 			<div class="alinhar">
 				<img src="imagens/jogador_1.png">
+				<br/>
+				<span id="nome_jogador_1"></span>
 			</div>
 			
 			<div class="centralizar alinhar">
 				<table>
 					<tr>
-						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
-							<div class="area"></div>
+						<td class="borda_inferior borda_direita">
+							<div class="jogada area" id="a1"></div>
 						</td>
-						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
-							<div class="area"></div>
+						<td class="borda_inferior borda_direita">
+							<div class="jogada area" id="a2"></div>
 						</td>
-						<td style="border-bottom: 1px solid red;">
-							<div class="area"></div>
-						</td>
-					</tr>
-					<tr>
-						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
-							<div class="area"></div>
-						</td>
-						<td style="border-bottom: 1px solid red; border-right: 1px solid red; ">
-							<div class="area"></div>
-						</td>
-						<td style="border-bottom: 1px solid red;">
-							<div class="area"></div>
+						<td class="jogada borda_inferior">
+							<div class="jogada area" id="a3"></div>
 						</td>
 					</tr>
 					<tr>
-						<td style="border-right: 1px solid red;">
-							<div class="area"></div>
+						<td class="borda_inferior borda_direita">
+							<div class="jogada area" id="b1"></div>
 						</td>
-						<td style="border-right: 1px solid red;">
-							<div class="area"></div>
+						<td class="borda_inferior borda_direita">
+							<div class="jogada area" id="b2"></div>
+						</td>
+						<td class="borda_inferior">
+							<div class="jogada area" id="b3"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="borda_direita">
+							<div class="jogada area" id="c1"></div>
+						</td>
+						<td class="borda_direita">
+							<div class="jogada area" id="c2"></div>
 						</td>
 						<td>
-							<div class="area"></div>
+							<div class="jogada area" id="c3"></div>
 						</td>
 					</tr>
 				</table>
@@ -86,6 +88,8 @@
 
 			<div class="alinhar">
 				<img src="imagens/jogador_2.png">
+				<br/>
+				<span id="nome_jogador_2"></span>
 			</div>
 
 		</div>
